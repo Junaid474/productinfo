@@ -1,78 +1,52 @@
-
-                    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6NYG9QNK2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-S6NYG9QNK2');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0d6efd">
-    <title>CONTACT</title>
+    <title>contact</title>
     <meta name="description" content="contact">
     <meta name="keywords" content="contact">
     <link rel="canonical" href="https://junaid474.github.io/productinfo/contact.html">
-    
-    <meta property="og:title" content="CONTACT">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="contact">
     <meta property="og:description" content="contact">
+    <meta property="og:image" content="">
     <meta property="og:url" content="https://junaid474.github.io/productinfo/contact.html">
-    <meta property="og:type" content="product">
+    <meta property="og:type" content="article">
     <meta property="og:site_name" content="Product info">
-    <meta property="og:image" content="https://placehold.co/1200x630/20c997/ffffff?text=contact">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/679/679922.png" type="image/png">
     
-    <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "CONTACT",
-  "description": "contact",
-  "image": "https://placehold.co/1200x630/20c997/ffffff?text=contact",
-  "url": "https://junaid474.github.io/productinfo/contact.html",
-  "brand": {
-    "@type": "Brand",
-    "name": "Product info"
-  }
-}
-    </script>
-
     <style>
-        :root { --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%); --dark-bg: #0f172a; --card-bg: #ffffff; --text-main: #334155; }
-        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: var(--text-main); display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; }
+        :root { --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%); --dark-bg: #0f172a; --card-bg: #ffffff; }
+        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; }
         h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; font-weight: 700; }
-        .hero-section { background: var(--dark-bg); padding: 80px 0; color: white; }
+        .hero-section { background: var(--dark-bg); padding: 100px 0; color: white; position: relative; overflow: hidden; }
+        .hero-section::after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 50% 50%, rgba(13, 202, 240, 0.15), transparent 70%); }
         .text-gradient { background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .tech-card { border: none; border-radius: 16px; background: var(--card-bg); box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: 0.3s; height: 100%; }
-        .tech-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15); }
-        .card-img-top { height: 220px; object-fit: cover; width: 100%; border-top-left-radius: 16px; border-top-right-radius: 16px; }
-        .navbar { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.95); }
-        .btn-tech { background: var(--primary-gradient); border: none; color: white; border-radius: 50px; padding: 10px 25px; font-weight: 600; }
-        .btn-tech:hover { background: linear-gradient(135deg, #0b5ed7 0%, #0aa2c0 100%); color: white; }
-        .badge-cat { background: #e0f2f1; color: #0f766e; font-weight: 600; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; }
-        .ad-sidebar-left img, .ad-sidebar-right img { max-width: 100%; height: auto; display: block; margin-bottom: 10px; }
-        footer a:hover { color: #fff !important; }
-        /* Table Styles for Products */
-        article table { width: 100%; margin-bottom: 1rem; border-collapse: collapse; }
-        article table td, article table th { padding: 12px; border: 1px solid #e2e8f0; }
-        article table tr:nth-child(even) { background-color: #f8fafc; }
+        .tech-card { border: none; border-radius: 16px; background: var(--card-bg); box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: all 0.3s ease; height: 100%; overflow: hidden; }
+        .tech-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15); }
+        .card-img-top { height: 220px; object-fit: cover; width: 100%; transition: transform 0.5s; }
+        .tech-card:hover .card-img-top { transform: scale(1.05); }
+        .badge-cat { background: #e0f2f1; color: #0f766e; font-weight: 600; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; }
+        .btn-tech { background: var(--primary-gradient); border: none; color: white; border-radius: 50px; padding: 10px 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3); }
+        .btn-tech:hover { background: linear-gradient(135deg, #0b5ed7 0%, #0aa2c0 100%); color: white; transform: translateY(-2px); }
+        .toc-box { background: white; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 30px; }
+        .toc-box a { display: block; padding: 8px 0; color: #64748b; text-decoration: none; border-bottom: 1px solid #f1f5f9; transition: color 0.2s; }
+        .toc-box a:hover { color: #0d6efd; padding-left: 5px; }
+        .aff-box { background: linear-gradient(135deg, #fff3cd 0%, #ffecb5 100%); border: 1px solid #ffeeba; border-radius: 12px; padding: 30px; text-align: center; margin: 40px 0; }
+        .aff-btn { background: #ffc107; color: #000; font-weight: 800; font-size: 1.2rem; padding: 15px 40px; border-radius: 50px; text-transform: uppercase; border: none; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4); transition: transform 0.2s; }
+        .aff-btn:hover { background: #ffca2c; transform: scale(1.05); color: #000; }
+        article table { width: 100%; margin-bottom: 1.5rem; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; }
+        article table td, article table th { padding: 15px; border-bottom: 1px solid #e2e8f0; }
+        .faq-accordion .accordion-button:not(.collapsed) { color: #0d6efd; background: #eff6ff; }
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
-
-
-
-                    
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom sticky-top" style="background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);">
         <div class="container">
             <a class="navbar-brand fw-bold" href="https://junaid474.github.io/productinfo/index.html"><i class="fas fa-box-open text-primary"></i> Product info</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
@@ -92,8 +66,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
-                    <div class="container py-5 mt-5"><div class="row justify-content-center"><div class="col-lg-8 bg-white p-5 rounded shadow-sm"><div class="container py-5">
+    </nav><div class="container py-5"><div class="row justify-content-center"><div class="col-lg-8 bg-white p-5 rounded-4 shadow-sm"><div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <div class="text-center mb-5" data-aos="fade-up">
@@ -169,31 +142,34 @@
         </div>
     </div>
 </div></div></div></div>
-                    
-    
-    
     <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 mb-4">
                     <h5 class="fw-bold text-primary mb-3">Product info</h5>
                     <p class="text-secondary small">Your trusted source for detailed product information, specifications, and honest reviews. We help you buy better.</p>
-                    <div class="mt-3">
-                        
-                    </div>
+                    <div class="mt-3"></div>
                 </div>
                 <div class="col-md-3 mb-4">
                     <h6 class="text-uppercase mb-3 fw-bold">Quick Links</h6>
                     <ul class="list-unstyled text-secondary small">
-                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/index.html" class="text-secondary">Home</a></li>
-                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/products.html" class="text-secondary">All Products</a></li>
-                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/about.html" class="text-secondary">About Us</a></li>
-                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/privacy.html" class="text-secondary">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/index.html" class="text-secondary text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/products.html" class="text-secondary text-decoration-none">All Products</a></li>
+                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/about.html" class="text-secondary text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/privacy.html" class="text-secondary text-decoration-none">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-4">
-                    
-                </div>
+                <div class="mt-4">
+                    <h6 class="text-uppercase mb-3 fw-bold">Subscribe via Email</h6>
+                    <form action="mailto:junaidwaseem474@gmail.com" method="get" enctype="text/plain">
+                        <input type="hidden" name="subject" value="Subscribe Request">
+                        <div class="input-group mb-3">
+                            <input type="text" name="body" class="form-control form-control-sm" placeholder="Your Email" required>
+                            <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div></div>
             </div>
             <hr class="border-secondary opacity-25">
             <div class="text-center text-secondary small">&copy; 2026 Product info. All rights reserved.</div>
@@ -202,6 +178,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({duration: 800, once: true, disable: 'mobile'});</script>
-</body>
-</html>
-                
+</body></html>
