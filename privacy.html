@@ -7,7 +7,6 @@
     <meta name="description" content="privacy">
     <meta name="keywords" content="privacy">
     <link rel="canonical" href="https://junaid474.github.io/productinfo/privacy.html">
-    <meta name="robots" content="index, follow">
     <meta property="og:title" content="privacy">
     <meta property="og:description" content="privacy">
     <meta property="og:image" content="">
@@ -61,6 +60,7 @@
                         <ul class="dropdown-menu border-0 shadow-sm">
                             <li><a class="dropdown-item" href="https://junaid474.github.io/productinfo/privacy.html">Privacy Policy</a></li>
                             <li><a class="dropdown-item" href="https://junaid474.github.io/productinfo/terms.html">Terms of Use</a></li>
+                            <li><a class="dropdown-item" href="https://junaid474.github.io/productinfo/disclaimer.html">Disclaimer</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -259,16 +259,16 @@
             <div class="row">
                 <div class="col-md-5 mb-4">
                     <h5 class="fw-bold text-primary mb-3">Product info</h5>
-                    <p class="text-secondary small">Your trusted source for detailed product information, specifications, and honest reviews. We help you buy better.</p>
+                    <p class="text-secondary small">A source for product information, specifications, features.</p>
                     <div class="mt-3"></div>
                 </div>
                 <div class="col-md-3 mb-4">
                     <h6 class="text-uppercase mb-3 fw-bold">Quick Links</h6>
                     <ul class="list-unstyled text-secondary small">
                         <li class="mb-2"><a href="https://junaid474.github.io/productinfo/index.html" class="text-secondary text-decoration-none">Home</a></li>
-                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/products.html" class="text-secondary text-decoration-none">All Products</a></li>
+                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/products.html" class="text-secondary text-decoration-none">Catalog</a></li>
                         <li class="mb-2"><a href="https://junaid474.github.io/productinfo/about.html" class="text-secondary text-decoration-none">About Us</a></li>
-                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/privacy.html" class="text-secondary text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="https://junaid474.github.io/productinfo/disclaimer.html" class="text-secondary text-decoration-none">Disclaimer</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -287,6 +287,15 @@
             <div class="text-center text-secondary small">&copy; 2026 Product info. All rights reserved.</div>
         </div>
     </footer>
+    
+                <div id="cookie-consent" class="fixed-bottom bg-dark text-white py-2 text-center shadow-lg" style="display:none; z-index: 10000;">
+                    <p class="d-inline mb-0 me-3 small">We use cookies to improve your experience.</p>
+                    <button onclick="acceptCookies()" class="btn btn-sm btn-primary py-0" style="font-size: 0.8rem;">Accept</button>
+                </div>
+                <script>
+                    if(!localStorage.getItem('cookieConsent')) { document.getElementById('cookie-consent').style.display = 'block'; }
+                    function acceptCookies() { localStorage.setItem('cookieConsent', 'true'); document.getElementById('cookie-consent').style.display = 'none'; }
+                </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({duration: 800, once: true, disable: 'mobile'});</script>
