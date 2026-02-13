@@ -1,6 +1,4 @@
 # Product info
 
-Description: Expert product reviews.
-
 ## Reviews
-- [Simple Pure White Japanese MDA PBT Keycaps (150 Keys)](https://junaid474.github.io/productinfo/products/white-japanese-mda-keycaps.html): Upgrade your mechanical keyboard with these Simple Pure White Japanese MDA Keycaps. Featuring high-quality PBT material, 150 keys, and durable thermal sublimation. Fits 60/84/98/108 layouts.
+- [Simple Pure White Japanese MDA PBT Keycaps (150 Keys)](https://junaid474.github.io/productinfo/products/white-japanese-mda-keycaps.html)
