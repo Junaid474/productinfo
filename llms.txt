@@ -1,4 +1,4 @@
-# Product info
+# Product info || Get info about products
 
 Description: Expert product reviews.
 
