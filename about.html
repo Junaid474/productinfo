@@ -12,7 +12,7 @@
     <meta property="og:image" content="">
     <meta property="og:url" content="https://junaid474.github.io/productinfo/about.html">
     <meta property="og:type" content="article">
-    <meta property="og:site_name" content="Product info || Get info about products">
+    <meta property="og:site_name" content="Product info">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -51,12 +51,25 @@
         article table { width: 100%; margin-bottom: 1.5rem; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; }
         article table td, article table th { padding: 15px; border-bottom: 1px solid #e2e8f0; }
         .faq-accordion .accordion-button:not(.collapsed) { color: #0d6efd; background: #eff6ff; }
+        .pros-cons-box { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .pros-box, .cons-box { padding: 20px; flex: 1; }
+        .cons-box { background: #f8fafc; }
+        @media (min-width: 768px) { .pros-cons-box { display: flex; } .pros-box { border-right: 1px solid #e2e8f0; } }
+        .pc-list { list-style: none; padding: 0; margin: 0; }
+        .pc-list li { padding: 8px 0; display: flex; align-items: flex-start; }
+        .pc-list li i { margin-top: 4px; margin-right: 12px; }
+        .rating-bar-container { background: #e2e8f0; border-radius: 999px; height: 8px; width: 100%; margin-top: 5px; overflow: hidden; }
+        .rating-bar { height: 100%; background: var(--primary-gradient); border-radius: 999px; }
+        .specs-list { list-style: none; padding: 0; margin: 0; }
+        .specs-list li { padding: 8px 0; border-bottom: 1px solid #e2e8f0; font-size: 0.9rem; }
+        .specs-list li:last-child { border-bottom: none; }
+        .specs-list i { color: #0d6efd; width: 20px; }
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-light border-bottom sticky-top" style="background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="https://junaid474.github.io/productinfo/"><i class="fas fa-box-open text-primary"></i> Product info || Get info about products</a>
+            <a class="navbar-brand fw-bold" href="https://junaid474.github.io/productinfo/"><i class="fas fa-box-open text-primary"></i> Product info</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
@@ -75,35 +88,13 @@
                 </ul>
             </div>
         </div>
-    </nav><div class="container py-5"><div class="row justify-content-center"><div class="col-lg-8 bg-white p-5 rounded-4 shadow-sm"><h1>About Us</h1>
-<p class="text-muted"><small>Welcome to Junaid ProductInfo</small></p>
-
-<p class="lead fw-bold">At Junaid ProductInfo, our primary goal is to simplify your buying decisions by providing accurate information, detailed specifications, and secure links to purchase the best products on the market.</p>
-
-<h3>Our Mission</h3>
-<p>In today's fast-paced digital marketplace, consumers are overwhelmed with choices. Whether you are looking for the latest tech gadgets, everyday consumer electronics, or specialized software, finding reliable specifications and honest feature breakdowns can be exhausting. Our mission is to cut through the marketing noise. We dive deep into product manuals, test features, and organize critical data so you know exactly what you are getting before you click "buy."</p>
-
-<h3>What We Provide</h3>
-<ul>
-    <li><strong>Detailed Specifications:</strong> We break down the technical jargon into easy-to-understand metrics, ensuring you know the exact capabilities of a product.</li>
-    <li><strong>Feature Highlights:</strong> We spotlight the most important features that actually matter to your daily use, skipping the fluff.</li>
-    <li><strong>Direct Purchase Links:</strong> Once you have the information you need, we provide safe, verified affiliate links to reputable retailers where you can secure the best current prices.</li>
-</ul>
-
-<h3>Transparency and Trust</h3>
-<p>Trust is the foundation of the Junaid Network. We want to be entirely transparent: we participate in affiliate marketing programs. This means that when you use our provided links to buy a product, we may earn a small commission at no extra cost to you. This model allows us to keep the site running and free of disruptive paywalls. However, our first loyalty is to our readers. We strive to present accurate, unbiased information regardless of any affiliate partnerships.</p>
-
-<h3>Part of the Junaid Network</h3>
-<p>Junaid ProductInfo is a proud branch of the broader <strong>Junaid Network</strong>. While our TechBlog focuses on deep-dive coding tutorials and software development, this ProductInfo hub is entirely dedicated to the end consumer. By bridging the gap between technical architecture and consumer technology, we aim to be your ultimate digital resource.</p>
-
-<h3>Get in Touch</h3>
-<p>We are always looking to improve our database. If there is a specific product you want us to review, or if you notice a specification that needs updating, we would love to hear from you. Please reach out to us via our <a href="contact.html" class="fw-bold text-primary">Contact Page</a>.</p></div></div></div>
+    </nav><div class="container py-5"><div class="row justify-content-center"><div class="col-lg-8 bg-white p-5 rounded-4 shadow-sm"><h2>About Us</h2><p>Get information specifications of products and get link to buy them</p></div></div></div>
     
     <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 mb-4">
-                    <h5 class="fw-bold text-primary mb-3">Product info || Get info about products</h5>
+                    <h5 class="fw-bold text-primary mb-3">Product info</h5>
                     <p class="text-secondary small">A source for product information, specifications, features.</p>
                     <div class="mt-3"></div>
                 </div>
@@ -117,20 +108,10 @@
                         
                     </ul>
                 </div>
-                <div class="col-md-4 mb-4">
-                <div class="mt-4">
-                    <h6 class="text-uppercase mb-3 fw-bold">Subscribe via Email</h6>
-                    <form action="mailto:junaidwaseem474@gmail.com" method="get" enctype="text/plain">
-                        <input type="hidden" name="subject" value="Subscribe Request">
-                        <div class="input-group mb-3">
-                            <input type="text" name="body" class="form-control form-control-sm" placeholder="Your Email" required>
-                            <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </div></div>
+                <div class="col-md-4 mb-4"></div>
             </div>
             <hr class="border-secondary opacity-25">
-            <div class="text-center text-secondary small">&copy; 2026 Product info || Get info about products. All rights reserved.</div>
+            <div class="text-center text-secondary small">&copy; 2026 Product info. All rights reserved.</div>
         </div>
     </footer>
     
